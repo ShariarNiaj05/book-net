@@ -7,6 +7,7 @@ const CreatePostPage = () => {
       category: formData.get("category"),
       image: formData.get("image"),
     };
+    console.log(data);
   };
   return (
     <div className=" shadow-xl bg-base-100 w-[80%] my-12">
