@@ -1,6 +1,7 @@
 import { getCommentsById } from "@/services/commentServices";
 import { TPost } from "@/types";
 import Image from "next/image";
+import Comments from "./Comments";
 
 const PostDetails = async ({ post }: { post: TPost }) => {
   const comments = await getCommentsById(post.id, true);
@@ -15,6 +16,7 @@ const PostDetails = async ({ post }: { post: TPost }) => {
           <div className="badge p-4 bg-fuchsia-500">{post.category}</div>
         </div>
         <p>{post.description}</p>
+        <Comments comments={comments} />
       </div>
     </div>
   );
