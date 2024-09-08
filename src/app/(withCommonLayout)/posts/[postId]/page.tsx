@@ -5,7 +5,7 @@ type TProps = {
 };
 
 const PostDetailsPage = ({ params }: { params: TProps }) => {
-  const postId = params.postId;
+  const postId = params.params.postId;
   return <div>PostDetailsPage:{postId}</div>;
 };
 
