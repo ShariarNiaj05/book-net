@@ -1,5 +1,3 @@
-Folder Structure
-
     # Book Net
 
 
@@ -9,6 +7,19 @@ Folder Structure
 
 
     For more details, check out the other tabs below:
+
+
+    * **`usage.md`:**
+
+    ```markdown
+
+    ## How to Use
+
+
+
+    **Basic usage:**
+
+    ```javascrip
 
 # Folder Structure
 
