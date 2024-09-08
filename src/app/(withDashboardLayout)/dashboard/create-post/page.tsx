@@ -5,7 +5,7 @@ const CreatePostPage = () => {
     "use server";
 
     const posts = await getAllPosts();
-    const data = {
+    const bookData = {
       id: posts.length + 1,
       bookName: formData.get("bookName"),
       description: formData.get("description"),
@@ -13,7 +13,7 @@ const CreatePostPage = () => {
       image: formData.get("image"),
     };
 
-    console.log(data);
+    console.log(bookData);
   };
   return (
     <div className=" shadow-xl bg-base-100 w-[80%] my-12">
