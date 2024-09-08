@@ -1,5 +1,23 @@
 Folder Structure
 
+# Tab System with Links
+
+- [Tab 1](#tab-1)
+- [Tab 2](#tab-2)
+- [Tab 3](#tab-3)
+
+## Tab 1
+
+This is content for Tab 1.
+
+## Tab 2
+
+This is content for Tab 2.
+
+## Tab 3
+
+This is content for Tab 3.
+
 # Folder Structure
 
 ```js
