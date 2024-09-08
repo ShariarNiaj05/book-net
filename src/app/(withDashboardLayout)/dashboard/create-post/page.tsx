@@ -1,4 +1,5 @@
 import { createPost, getAllPosts } from "@/services/postServices";
+import { TPost } from "@/types";
 
 const CreatePostPage = () => {
   const handleCreatePost = async (formData: FormData) => {
@@ -13,7 +14,12 @@ const CreatePostPage = () => {
       image: formData.get("image"),
     };
 
-    createPost(bookData);
+    try {
+      const res = await createPost(bookData as TPost);
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <div className=" shadow-xl bg-base-100 w-[80%] my-12">
