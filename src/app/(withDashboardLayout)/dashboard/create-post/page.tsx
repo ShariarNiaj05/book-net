@@ -2,6 +2,9 @@ const CreatePostPage = () => {
   const handleCreatePost = async (formData: FormData) => {
     "use server";
     const bookName = formData.get("bookName");
+    const description = formData.get("description");
+    const category = formData.get("category");
+    const image = formData.get("image");
   };
   return (
     <div className=" shadow-xl bg-base-100 w-[80%] my-12">
@@ -27,6 +30,7 @@ const CreatePostPage = () => {
             <span className="label-text">Description</span>
           </label>
           <textarea
+            name="description"
             placeholder="Description"
             className="textarea textarea-bordered"
             required
@@ -38,6 +42,7 @@ const CreatePostPage = () => {
             <span className="label-text">Category</span>
           </label>
           <input
+            name="category"
             type="text"
             placeholder="Fantasy, Fiction, etc."
             className="input input-bordered"
@@ -50,6 +55,7 @@ const CreatePostPage = () => {
             <span className="label-text">Image URL</span>
           </label>
           <input
+            name="image"
             type="url"
             placeholder="Image URL"
             className="input input-bordered"
