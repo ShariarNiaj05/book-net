@@ -1,10 +1,12 @@
 const CreatePostPage = () => {
   const handleCreatePost = async (formData: FormData) => {
     "use server";
-    const bookName = formData.get("bookName");
-    const description = formData.get("description");
-    const category = formData.get("category");
-    const image = formData.get("image");
+    const data = {
+      bookName: formData.get("bookName"),
+      description: formData.get("description"),
+      category: formData.get("category"),
+      image: formData.get("image"),
+    };
   };
   return (
     <div className=" shadow-xl bg-base-100 w-[80%] my-12">
