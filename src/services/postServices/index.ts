@@ -1,3 +1,4 @@
+import { TPost } from "@/types";
 import { delay } from "@/utils/delay";
 
 export const getAllPosts = async (type?: string, wait = false) => {
@@ -41,7 +42,7 @@ export const getPost = async (postId: string, wait = false) => {
   return res.json();
 };
 
-export const createPost = async (data) => {
+export const createPost = async (data: TPost) => {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/posts`, {
     method: "POST",
     headers: {
@@ -50,5 +51,5 @@ export const createPost = async (data) => {
     body: JSON.stringify(data),
     cache: "no-store",
   });
-  return res.json(data);
+  return res.json();
 };
