@@ -1,6 +1,6 @@
 import { delay } from "@/utils/delay";
 
-export const getAllPosts = async (type: string) => {
+export const getAllPosts = async (type: string, wait = false) => {
   let fetchOptions = {};
 
   if (type === "ssr") {
@@ -22,7 +22,8 @@ export const getAllPosts = async (type: string) => {
   if (!res.ok) {
     throw new Error("Failed to fetch posts data");
   }
-
-  delay(2000);
+  if (wait) {
+    delay(2000);
+  }
   return res.json();
 };
