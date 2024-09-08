@@ -9,7 +9,7 @@ const CreatePostPage = () => {
     const posts = await getAllPosts();
     const bookData = {
       id: JSON.stringify(posts.length + 1),
-      bookName: formData.get("bookName"),
+      name: formData.get("bookName"),
       description: formData.get("description"),
       category: formData.get("category"),
       image: formData.get("image"),
