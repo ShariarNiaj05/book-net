@@ -1,25 +1,34 @@
     # Book Net
 
+## title {.tabset .tabset-fade}
 
+content above tabbed region.
 
-    This is a brief overview of the project.
+### tab Social-Media
 
+tab content Social-Media
 
+### tab Contact
 
-    For more details, check out the other tabs below:
+tab content Contact
 
+### tab Revisions
 
-    * **`usage.md`:**
+tab content Revisions
 
-    ```markdown
+### tab Articles
 
-    ## How to Use
+tab content Articles
 
+### tab Skills
 
+tab content Skills
 
-    **Basic usage:**
+### tab Insights
 
-    ```javascrip
+tab content Insights
+
+content below tabbed region
 
 # Folder Structure
 
