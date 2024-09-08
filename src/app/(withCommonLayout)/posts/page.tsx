@@ -1,5 +1,3 @@
-import Banner from "@/components/banner/Banner";
-
 const AllPostPage = () => {
   return <div></div>;
 };
