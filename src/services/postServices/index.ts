@@ -5,6 +5,12 @@ export const getAllPosts = async (type: string) => {
     fetchOptions = {
       cache: "no-store",
     };
+  } else if (type === "isr") {
+    fetchOptions = {
+      next: {
+        revalidate: 30,
+      },
+    };
   }
 
   const res = await fetch(
