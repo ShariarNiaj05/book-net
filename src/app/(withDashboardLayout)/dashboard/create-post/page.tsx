@@ -7,7 +7,7 @@ const CreatePostPage = () => {
       <h1 className="text-center text-4xl">
         Add Your <span className="text-fuchsia-900">Book Review</span>
       </h1>
-      <form onSubmit={handleCreatePost} className="p-5">
+      <form action={handleCreatePost} className="p-5">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Book Name</span>
