@@ -1,7 +1,9 @@
+import { getCommentsById } from "@/services/commentServices";
 import { TPost } from "@/types";
 import Image from "next/image";
 
 const PostDetails = async ({ post }: { post: TPost }) => {
+  const comments = await getCommentsById(post.id, true);
   return (
     <div className="card card-side bg-base-100 shadow-xl">
       <figure>
