@@ -1,7 +1,7 @@
 const CreatePostPage = () => {
-  const handleCreatePost = async () => {
+  const handleCreatePost = async (formData: FormData) => {
     "use server";
-    console.log("book added");
+    const bookName = formData.get("bookName");
   };
   return (
     <div className=" shadow-xl bg-base-100 w-[80%] my-12">
@@ -14,6 +14,7 @@ const CreatePostPage = () => {
             <span className="label-text">Book Name</span>
           </label>
           <input
+            name="bookName"
             type="text"
             placeholder="Book Name"
             className="input input-bordered"
