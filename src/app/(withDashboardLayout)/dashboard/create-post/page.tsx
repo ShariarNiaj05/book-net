@@ -1,6 +1,6 @@
-"use server";
 const CreatePostPage = () => {
   const handleCreatePost = async () => {
+    "use server";
     console.log("book added");
   };
   return (
