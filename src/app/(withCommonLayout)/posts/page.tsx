@@ -1,3 +1,4 @@
+import PostCard from "@/components/ui/PostCard";
 import { getAllPosts } from "@/services/postServices";
 import { TPost } from "@/types";
 
