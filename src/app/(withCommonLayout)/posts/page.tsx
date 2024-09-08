@@ -14,7 +14,7 @@ const AllPostPage = async () => {
         lovers and share your reading experiences.
       </p>
       <div className="grid grid-cols-3 my-12 gap-8">
-        {posts.slice(0, 6).map((post: TPost) => (
+        {posts.map((post: TPost) => (
           <PostCard key={post.id} post={post} />
         ))}
       </div>
