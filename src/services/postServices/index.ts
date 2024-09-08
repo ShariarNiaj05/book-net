@@ -1,6 +1,6 @@
 import { delay } from "@/utils/delay";
 
-export const getAllPosts = async (type: string, wait = false) => {
+export const getAllPosts = async (type?: string, wait = false) => {
   let fetchOptions = {};
 
   if (type === "ssr") {
