@@ -47,3 +47,10 @@ src/
 └── services/
 └── api/
 ```
+
+```bash
+src/
+|--app/
+|   --(withCommonLayout)/
+|--asset/
+```
