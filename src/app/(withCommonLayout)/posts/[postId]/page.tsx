@@ -6,8 +6,8 @@ type TProps = {
   };
 };
 
-const PostDetailsPage = async ({ params }: { params: TProps }) => {
-  const postId = params.params.postId;
+const PostDetailsPage = async ({ params }: TProps) => {
+  const postId = params.postId;
   const post = await getPost(postId, true);
   return <div>PostDetailsPage:{postId}</div>;
 };
