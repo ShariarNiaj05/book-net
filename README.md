@@ -92,5 +92,10 @@ src/
 |--asset/
 ```
 
-[installation](installation.md)
+## Installation
+
+[Installation](installation.md)
+
+## Usage
+
 [Usage](usage.md)
