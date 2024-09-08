@@ -1,5 +1,7 @@
+import Loading from "@/components/ui/Loading";
+
 const PostLoadingPage = () => {
-  return <div>POST IS LOADING.....</div>;
+  return <Loading />;
 };
 
 export default PostLoadingPage;
