@@ -3,7 +3,7 @@ import { getAllPosts } from "@/services/postServices";
 import { TPost } from "@/types";
 
 const AllPostPage = async () => {
-  const posts = await getAllPosts();
+  const posts = await getAllPosts("ssr");
   return (
     <div className="my-10 w-[90%] mx-auto">
       <h1 className="text-4xl text-center">
