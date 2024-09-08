@@ -1,5 +1,6 @@
 import { createPost, getAllPosts } from "@/services/postServices";
 import { TPost } from "@/types";
+import { revalidateTag } from "next/cache";
 
 const CreatePostPage = () => {
   const handleCreatePost = async (formData: FormData) => {
@@ -16,6 +17,10 @@ const CreatePostPage = () => {
 
     try {
       const res = await createPost(bookData as TPost);
+      if (res) {
+        revalidateTag("posts");
+        console.log("post created successfully");
+      }
       console.log(res);
     } catch (error) {
       console.log(error);
