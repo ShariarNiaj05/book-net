@@ -2,6 +2,7 @@ Folder Structure
 
 # Folder Structure
 
+```bash
 src/
 │
 ├── app/
@@ -29,9 +30,11 @@ src/
 │ └── api/
 │ This folder is responsible for handling external API calls, managing requests to back-end services,
 │ and interacting with data sources.
+```
 
 ## Folder structure
 
+```bash
 src/
 ├── app/
 │ └── (withCommonLayout)/
@@ -43,3 +46,4 @@ src/
 │ └── ui/
 └── services/
 └── api/
+```
