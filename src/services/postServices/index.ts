@@ -11,7 +11,7 @@ export const getAllPosts = async (type?: string, wait = false) => {
   } else if (type === "isr") {
     fetchOptions = {
       next: {
-        revalidate: 30,
+        tags: ["posts"],
       },
     };
   }
