@@ -1,7 +1,9 @@
 import { delay } from "@/utils/delay";
 
-export const getCommentsById = async (id: string, wait = false) => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/posts`);
+export const getCommentsById = async (postId: string, wait = false) => {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_API}/comments?post=${postId}`
+  );
 
   if (!res.ok) {
     throw new Error("Failed to fetch posts data");
