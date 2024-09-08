@@ -2,6 +2,43 @@ Folder Structure
 
 # Folder Structure
 
+```js
+src
+   |-- app
+   |   |-- (withCommonLayout)
+   |   |   |-- layout.tsx
+   |   |   |-- page.tsx
+   |   |   |-- posts
+   |   |   |   |-- page.tsx
+   |   |-- favicon.ico
+   |   |-- globals.css
+   |   |-- layout.tsx
+   |-- assets
+   |   |-- banner-img.jpg
+   |   |-- logo.png
+   |-- components
+   |   |-- banner
+   |   |   |-- Banner.module.css
+   |   |   |-- Banner.tsx
+   |   |-- latestPosts
+   |   |   |-- LatestPost.tsx
+   |   |-- shared
+   |   |   |-- Footer.tsx
+   |   |   |-- Navbar.tsx
+   |   |-- ui
+   |   |   |-- Comments.tsx
+   |   |   |-- Loading.tsx
+   |   |   |-- PostCard.tsx
+   |   |   |-- PostDetails.tsx
+   |   |   |-- PostForm.tsx
+   |   |   |-- Sidebar.tsx
+   |-- types
+   |   |-- index.ts
+   |-- utils
+   |   |-- delay.ts
+
+```
+
 ```bash
 src/
 │
