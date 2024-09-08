@@ -40,3 +40,7 @@ export const getPost = async (postId: string, wait = false) => {
   }
   return res.json();
 };
+
+export const createPost = async (data) => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/posts`);
+};
