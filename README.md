@@ -3,16 +3,35 @@
 ## Folder Structure
 
 ```js
+.eslintrc.json
+.gitignore
+README.md
+db.json
+installation.md
+next.config.mjs
+package-lock.json
+package.json
+postcss.config.mjs
 src
    |-- app
    |   |-- (withCommonLayout)
    |   |   |-- layout.tsx
    |   |   |-- page.tsx
    |   |   |-- posts
+   |   |   |   |-- [postId]
+   |   |   |   |   |-- page.tsx
+   |   |   |   |-- loading.tsx
    |   |   |   |-- page.tsx
+   |   |-- (withDashboardLayout)
+   |   |   |-- dashboard
+   |   |   |   |-- create-post
+   |   |   |   |   |-- page.tsx
+   |   |   |   |-- page.tsx
+   |   |   |-- layout.tsx
    |   |-- favicon.ico
    |   |-- globals.css
    |   |-- layout.tsx
+   |   |-- not-found.tsx
    |-- assets
    |   |-- banner-img.jpg
    |   |-- logo.png
@@ -32,10 +51,18 @@ src
    |   |   |-- PostDetails.tsx
    |   |   |-- PostForm.tsx
    |   |   |-- Sidebar.tsx
+   |-- services
+   |   |-- commentServices
+   |   |   |-- index.ts
+   |   |-- postServices
+   |   |   |-- index.ts
    |-- types
    |   |-- index.ts
    |-- utils
    |   |-- delay.ts
+tailwind.config.ts
+tsconfig.json
+usage.md
 
 ```
 
