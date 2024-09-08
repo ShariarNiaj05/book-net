@@ -1,5 +1,5 @@
-const AllPost = () => {
+const AllPostPage = () => {
   return <div>AllPost</div>;
 };
 
-export default AllPost;
+export default AllPostPage;
