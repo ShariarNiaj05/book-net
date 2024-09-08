@@ -1,3 +1,4 @@
+import PostDetails from "@/components/ui/PostDetails";
 import { getPost } from "@/services/postServices";
 
 type TProps = {
@@ -9,7 +10,11 @@ type TProps = {
 const PostDetailsPage = async ({ params }: TProps) => {
   const postId = params.postId;
   const post = await getPost(postId, true);
-  return <div>PostDetailsPage:{postId}</div>;
+  return (
+    <>
+      <PostDetails post={post} />
+    </>
+  );
 };
 
 export default PostDetailsPage;
