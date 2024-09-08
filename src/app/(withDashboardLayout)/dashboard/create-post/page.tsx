@@ -1,12 +1,18 @@
+import { getAllPosts } from "@/services/postServices";
+
 const CreatePostPage = () => {
   const handleCreatePost = async (formData: FormData) => {
     "use server";
+
+    const posts = await getAllPosts();
     const data = {
+      id = posts.length + 1,
       bookName: formData.get("bookName"),
       description: formData.get("description"),
       category: formData.get("category"),
       image: formData.get("image"),
     };
+
     console.log(data);
   };
   return (
