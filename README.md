@@ -1,22 +1,14 @@
 Folder Structure
 
-# Tab System with Links
+    # Book Net
 
-- [Tab 1](#tab-1)
-- [Tab 2](#tab-2)
-- [Tab 3](#tab-3)
 
-## Tab 1
 
-This is content for Tab 1.
+    This is a brief overview of the project.
 
-## Tab 2
 
-This is content for Tab 2.
 
-## Tab 3
-
-This is content for Tab 3.
+    For more details, check out the other tabs below:
 
 # Folder Structure
 
