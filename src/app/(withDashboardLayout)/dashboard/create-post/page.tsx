@@ -1,10 +1,13 @@
 const CreatePostPage = () => {
+  const handleCreatePost = async () => {
+    console.log("book added");
+  };
   return (
     <div className=" shadow-xl bg-base-100 w-[80%] my-12">
       <h1 className="text-center text-4xl">
         Add Your <span className="text-fuchsia-900">Book Review</span>
       </h1>
-      <form className="p-5">
+      <form onSubmit={handleCreatePost} className="p-5">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Book Name</span>
