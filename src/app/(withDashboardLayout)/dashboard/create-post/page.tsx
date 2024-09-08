@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/services/postServices";
+import { createPost, getAllPosts } from "@/services/postServices";
 
 const CreatePostPage = () => {
   const handleCreatePost = async (formData: FormData) => {
@@ -13,7 +13,7 @@ const CreatePostPage = () => {
       image: formData.get("image"),
     };
 
-    console.log(bookData);
+    createPost(bookData);
   };
   return (
     <div className=" shadow-xl bg-base-100 w-[80%] my-12">
