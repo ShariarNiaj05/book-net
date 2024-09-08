@@ -29,3 +29,17 @@ src/
 │ └── api/
 │ This folder is responsible for handling external API calls, managing requests to back-end services,
 │ and interacting with data sources.
+
+## Folder structure
+
+src/
+├── app/
+│ └── (withCommonLayout)/
+├── asset/
+├── components/
+│ ├── banner/
+│ ├── latestPost/
+│ ├── shared/
+│ └── ui/
+└── services/
+└── api/
